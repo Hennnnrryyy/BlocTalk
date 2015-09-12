@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u7q-FD-RB9"/>
+                        <viewControllerLayoutGuide type="bottom" id="NDs-Yk-c5V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-Mi-UfJ">
+                                <rect key="frame" x="0.0" y="195" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-CE-de4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Settings" id="oTk-DR-yeB">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="UQi-Vz-p1I"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAX-6S-Zzu">
+                                <rect key="frame" x="176" y="44" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.25899339700000001" blue="0.2289593097" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BbS-6J-tsp"/>
+                                    <constraint firstAttribute="height" constant="100" id="evc-8y-Eoa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79638962924972467" green="0.94053278742194446" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qAX-6S-Zzu" secondAttribute="centerX" constant="75" id="2As-gA-c6R"/>
+                            <constraint firstAttribute="centerX" secondItem="qAX-6S-Zzu" secondAttribute="centerX" id="6SQ-oy-Nty"/>
+                            <constraint firstItem="sbq-Mi-UfJ" firstAttribute="top" secondItem="qAX-6S-Zzu" secondAttribute="bottom" constant="50" id="7wb-R2-3X4"/>
+                            <constraint firstAttribute="centerX" secondItem="qAX-6S-Zzu" secondAttribute="centerX" constant="75" id="bdz-bY-peC"/>
+                            <constraint firstAttribute="width" secondItem="BZ9-CE-de4" secondAttribute="width" id="fyq-Ee-K31"/>
+                            <constraint firstAttribute="centerX" secondItem="sbq-Mi-UfJ" secondAttribute="centerX" id="udW-1q-4fw"/>
+                            <constraint firstItem="qAX-6S-Zzu" firstAttribute="top" secondItem="BZ9-CE-de4" secondAttribute="bottom" constant="25" id="w0d-eT-GKL"/>
+                            <constraint firstAttribute="width" secondItem="sbq-Mi-UfJ" secondAttribute="width" id="xaO-Co-k5X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2As-gA-c6R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="146"/>
+        </scene>
+    </scenes>
+</document>
